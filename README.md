@@ -1,2 +1,2 @@
-# YiMii-sample
-some practice
+# YiMii-portfolio 
+C# beginner

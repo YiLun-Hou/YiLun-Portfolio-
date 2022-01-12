@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Diagnostics;//開啟本機郵件api
 
-namespace 期中專題_02_Influncer_marketing
+namespace Influncer_marketing
 {
     public partial class Form2 : Form
     {

@@ -12,7 +12,7 @@ namespace Homework08_OXgame
 {
     public partial class XOgame : Form
     {
-        bool isX = true;
+        bool isX = true;//先設定初始bool
         public XOgame()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace Homework08_OXgame
             but8.Text = "";
             but9.Text = "";
         }
-        public void itisWin()
+        public void itisWin() //列出可能結果
         {
             if (but1.Text == "X" && but2.Text == "X" && but3.Text == "X")
             {
@@ -220,17 +220,14 @@ namespace Homework08_OXgame
             Application.Exit();
         }
 
-        private void txtbox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void butrestart_Click(object sender, EventArgs e)
         {
             clear1();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//逐一設定每個XO格子
         {
             if(isX==true)
             {

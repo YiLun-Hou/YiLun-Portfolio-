@@ -32,7 +32,7 @@ namespace Influncer_marketing
                 string strSQL = "select * from Account where Account = @searchaccount and Password=@searchpassword";
                 SqlCommand cmd = new SqlCommand(strSQL, con);
                 cmd.Parameters.AddWithValue("@searchaccount", account);
-                cmd.Parameters.AddWithValue("@searchpassword", password);
+                cmd.Parameters.AddWithValue("@searchpassword", password); 
                 SqlDataReader reader = cmd.ExecuteReader();//有查詢到回傳資料
 
                 if (reader.Read())

@@ -1,2 +1,0 @@
-# YiMii-portfolio 
-C# beginner

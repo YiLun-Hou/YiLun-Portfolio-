@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace 期中專題_02_Influncer_marketing
+namespace Influncer_marketing
 {
     public partial class Form3 : Form
     {

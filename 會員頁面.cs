@@ -28,7 +28,7 @@ namespace Influncer_marketing
             scsb.DataSource = @".";//本機資料庫來源，@就是不處理特殊自元
             scsb.InitialCatalog = "myProject";//資料庫名稱
             scsb.IntegratedSecurity = true;//整合驗證
-
+            
             //決定搜尋欄位
             cmbgender.Items.Add("Male");
             cmbgender.Items.Add("Female");

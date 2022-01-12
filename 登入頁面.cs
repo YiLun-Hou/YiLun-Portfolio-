@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;//ado.net元件
 
-
 namespace Influncer_marketing
 {
     public partial class Form1 : Form

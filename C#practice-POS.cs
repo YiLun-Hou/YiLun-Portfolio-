@@ -13,16 +13,16 @@ namespace Homework03_POS
     public partial class POS : Form
     {
 
-        static public int beer, tequlia, whisky, redwine;
+        static public int beer, tequlia, whisky, redwine;//餐點內容物
         
 
         void price()
         {
-            int total1 = beer * 120 + tequlia * 180 + whisky * 350 + redwine * 320;
+            int total1 = beer * 120 + tequlia * 180 + whisky * 350 + redwine * 320;//總價
             txtpayment.Text = "$NT"+total1.ToString();
         }
 
-        void list()
+        void list()//點餐列表
         {
             int beertotal = beer * 120;
             int tequliatotal = tequlia * 180;
@@ -41,7 +41,7 @@ namespace Homework03_POS
             txtpayment.Clear();
         }
 
-        private void butcash_Click(object sender, EventArgs e)
+        private void butcash_Click(object sender, EventArgs e)//現金付款，無特殊優惠
         {
             int total1 = beer * 120 + tequlia * 180 + whisky * 350 + redwine * 320;
             MessageBox.Show("今日消費金額為: " + total1.ToString(), "今日消費帳單", MessageBoxButtons.OKCancel);
@@ -69,7 +69,7 @@ namespace Homework03_POS
             list();
         }
 
-        private void butcard_Click(object sender, EventArgs e)
+        private void butcard_Click(object sender, EventArgs e)//信用卡付款，85折優惠
         {
             int total1 = beer * 120 + tequlia * 180 + whisky * 350 + redwine * 320;
             int total2 = total1 * 85 / 100;
